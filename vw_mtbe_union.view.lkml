@@ -134,4 +134,15 @@ view: vw_mtbe_union {
     type: count
     drill_fields: [location_name, purchase_or_exchange_partner_name]
   }
+
+  measure: sum_grossqty
+  {type:  sum
+    sql: ${gross_qty} ;;
+  }
+
+  measure: sum_netquantity_gallons
+  {type: sum
+    sql: ${net_quantitygallons} ;;
+  }
+
 }
