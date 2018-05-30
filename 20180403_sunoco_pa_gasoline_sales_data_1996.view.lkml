@@ -125,6 +125,13 @@ view: 20180403_sunoco_pa_gasoline_sales_data_1996 {
     sql: ${TABLE}.UOM ;;
   }
 
+
+dimension: ids_dupe_ind {
+    type:  string
+    sql:  ${TABLE}.ids_dupe_ind ;;
+}
+
+
   measure: count {
     type: count
     drill_fields: [sfname]
